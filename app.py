@@ -30,13 +30,7 @@ def encode():
             stego.write_data('injected.jpg', msg)
 
             return send_file('injected.jpg', as_attachment=True)
-        
-        # elif img_file.filename.endswith('.png'):
-        #     img_file.save('injected.png')
-        #     stego.write_data('injected.png', msg)
-
-        #     return send_file('injected.png', as_attachment=True)
-
+      
         else:
 
             return redirect(url_for('index'))
